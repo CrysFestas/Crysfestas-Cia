@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrysFestas & Cia - Decoração de Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': {
+                            50: '#fff0f6',
+                            100: '#ffe0eb',
+                            200: '#ffc0cb',
+                            300: '#ffa1b5',
+                            400: '#ff819f',
+                            500: '#ff6289',
+                            600: '#e64d7a',
+                            700: '#cc396b',
+                            800: '#b3265c',
+                            900: '#99144d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(255, 192, 203, 0.7), rgba(255, 192, 203, 0.7)), url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+        
+        .backdrop-blur {
+            backdrop-filter: blur(10px);
+        }
+        
+        .scroll-down-arrow {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-20px) translateX(-50%); }
+            60% { transform: translateY(-10px) translateX(-50%); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FFC0CB;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #ffa1b5;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <a href="https://w.app/2schsp" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-2 sm:mr-3 sm:w-12 sm:h-12 sm:text-xl">C&F</div>
+                <a href="https://www.instagram.com/crysfestas.cia/" class="font-playfair text-xl sm:text-2xl font-bold text-primary-800">CrysFestas & Cia</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-6 lg:space-x-8">
+                <a href="#home" class="text-primary-800 font-medium hover:text-primary-600 transition">Início</a>
+                <a href="#services" class="text-gray-600 hover:text-primary-600 transition">Serviços</a>
+                <a href="https://www.instagram.com/crysfestas.cia/" class="text-gray-600 hover:text-primary-600 transition">Portfólio</a>
+                <a href="#about" class="text-gray-600 hover:text-primary-600 transition">Sobre Nós</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary-600 transition">Contato</a>
+            </div>
+            
+            <div class="flex items-center space-x-3 sm:space-x-4">
+                <a href="https://w.app/m3qn4z" class="hidden md:block bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-full font-medium transition sm:px-6">Orçamento</a>
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#home" class="block py-2 text-gray-800 hover:text-primary-600 transition">Início</a>
+                <a href="#services" class="block py-2 text-gray-800 hover:text-primary-600 transition">Serviços</a>
+                <a href="#portfolio" class="block py-2 text-gray-800 hover:text-primary-600 transition">Portfólio</a>
+                <a href="#about" class="block py-2 text-gray-800 hover:text-primary-600 transition">Sobre Nós</a>
+                <a href="#contact" class="block py-2 text-gray-800 hover:text-primary-600 transition">Contato</a>
+                <a href="https://w.app/m3qn4z" class="block bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full font-medium transition text-center">Orçamento</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image h-screen flex items-center justify-center text-center text-white relative">
+        <div class="container mx-auto px-6 fade-in">
+            <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-6 animate-float">Transformando sonhos em realidade</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Criamos decorações exclusivas que tornam seu evento inesquecível</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://w.app/m3qn4z" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full font-medium transition sm:px-8">Solicitar Orçamento</a>
+                <a href="#portfolio" class="bg-white hover:bg-gray-100 text-primary-800 px-6 py-3 rounded-full font-medium transition sm:px-8">Ver Portfólio</a>
+            </div>
+        </div>
+        <a href="#services" class="scroll-down-arrow text-white text-3xl">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary-800 mb-6">Sobre a CrysFestas & Cia</h2>
+                    <p class="text-gray-600 mb-6">Com mais de 10 anos de experiência no mercado, a CrysFestas & Cia se destaca pela criatividade, atenção aos detalhes e compromisso com a excelência em cada projeto.</p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="flex items-center bg-primary-50 px-4 py-2 rounded-full">
+                            <div class="bg-primary-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-primary-600"></i>
+                            </div>
+                            <span class="text-gray-700">Design exclusivo</span>
+                        </div>
+                        <div class="flex items-center bg-primary-50 px-4 py-2 rounded-full">
+                            <div class="bg-primary-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-primary-600"></i>
+                            </div>
+                            <span class="text-gray-700">Materiais de qualidade</span>
+                        </div>
+                        <div class="flex items-center bg-primary-50 px-4 py-2 rounded-full">
+                            <div class="bg-primary-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-primary-600"></i>
+                            </div>
+                            <span class="text-gray-700">Atendimento personalizado</span>
+                        </div>
+                        <div class="flex items-center bg-primary-50 px-4 py-2 rounded-full">
+                            <div class="bg-primary-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-primary-600"></i>
+                            </div>
+                            <span class="text-gray-700">Pontualidade</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full font-medium transition">Fale Conosco</a>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 duration-300">
+                            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Casamento decorado" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg mt-8 transform transition hover:scale-105 duration-300">
+                            <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Festa infantil" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105 duration-300">
+                            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Evento corporativo" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg mt-8 transform transition hover:scale-105 duration-300">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aniversário decorado" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-primary-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <div class="text-primary-200">Eventos realizados</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">10+</div>
+                    <div class="text-primary-200">Anos de experiência</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">100%</div>
+                    <div class="text-primary-200">Clientes satisfeitos</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">50+</div>
+                    <div class="text-primary-200">Temas disponíveis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary-800 mb-4">Nossos Serviços</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos soluções completas em decoração para todos os tipos de eventos</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Casamentos" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-ring text-primary-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold text-gray-800 mb-2">Casamentos</h3>
+                        <p class="text-gray-600 mb-4">Decoração completa para o dia mais especial da sua vida, desde a cerimônia até a recepção.</p>
+                      
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Festas infantis" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-birthday-cake text-primary-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold text-gray-800 mb-2">Festas Infantis</h3>
+                        <p class="text-gray-600 mb-4">Temas encantadores que fazem a alegria da criançada e deixam o evento ainda mais especial.</p>
+                        
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Eventos corporativos" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-briefcase text-primary-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold text-gray-800 mb-2">Eventos Corporativos</h3>
+                        <p class="text-gray-600 mb-4">Ambientes profissionais e sofisticados para reuniões, convenções e festas de empresa.</p>
+                       
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aniversários" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-gift text-primary-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold text-gray-800 mb-2">Aniversários</h3>
+                        <p class="text-gray-600 mb-4">Celebre sua data especial com decorações personalizadas que refletem sua personalidade.</p>
+                       
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Formaturas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-graduation-cap text-primary-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold text-gray-800 mb-2">Formaturas</h3>
+                        <p class="text-gray-600 mb-4">Celebre essa conquista com decorações que marcam o início de uma nova jornada.</p>
+                        
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Decoração Temática" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-palette text-primary-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold text-gray-800 mb-2">Decoração Temática</h3>
+                        <p class="text-gray-600 mb-4">Criamos ambientes imersivos com temas personalizados para qualquer tipo de evento.</p>
+                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 sm:py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-gradient-to-r from-primary-600 to-primary-800 rounded-2xl p-8 sm:p-12 md:p-16 text-center text-white">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Pronto para transformar seu evento?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Entre em contato conosco e vamos criar juntos a decoração dos seus sonhos!</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://w.app/m3qn4z" class="bg-white hover:bg-gray-100 text-primary-800 px-6 py-3 rounded-full font-medium transition sm:px-8">Solicitar Orçamento</a>
+                
+                </div>
+            </div>
+            
+                
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="font-playfair text-2xl md:text-3xl font-bold text-primary-800 mb-6">Nossas Informações</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                <p class="text-gray-600">Av. 31 de Marco,1060 -Dom Cabral<br>Belo Horizonte - MG</p> <a href="https://www.google.com/maps/place/Av.+31+de+Mar%C3%A7o,+1060+-+Dom+Cabral,+Belo+Horizonte+-+MG,+30535-000/@-19.9263198,-43.9963352,17z/data=!3m1!4b1!4m6!3m5!1s0xa696f12a9bd7a3:0x8b7b41eea86000c4!8m2!3d-19.9263249!4d-43.9937603!16s%2Fg%2F11bw4414mq?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D" class="bg-white hover:bg-gray-100 text-primary-800 px-100 py-500 rounded-full font-medium transition sm:px-8">Ir Para</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-phone-alt text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                <p class="text-gray-600">(31) 97542-8691</p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">ciacrysfestas@gmail.com</p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-clock text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Horário de Funcionamento</h4>
+                                <p class="text-gray-600">Segunda a Sexta: 7h às 18h</p>
+                                <p class="text-gray-600">Sábado: 7h às 13h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas redes sociais</h4>
+                        <div class="flex space-x-4">
+                            
+                            </a>
+                            <a href="https://www.instagram.com/crysfestas.cia/" class="bg-primary-100 hover:bg-primary-200 text-primary-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-instagram"></i>
+                          
+                          
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl mr-3">C&F</div>
+                        <span class="font-playfair text-xl font-bold">CrysFestas & Cia</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Transformando sonhos em realidade através da decoração de eventos especiais.</p>
+                    <div class="flex space-x-4">
+                        
+                        <a href="https://www.instagram.com/crysfestas.cia/" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('open');
+                this.querySelector('i').classList.toggle('fa-bars');
+                this.querySelector('i').classList.toggle('fa-times');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        if (mobileMenu.classList.contains('open')) {
+                            mobileMenu.classList.remove('open');
+                            mobileMenuButton.querySelector('i').classList.remove('fa-times');
+                            mobileMenuButton.querySelector('i').classList.add('fa-bars');
+                        }
+                        
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add animation class when elements come into view
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.service-card, .testimonial-card, .animate-float');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if (elementPosition < screenPosition) {
+                        element.classList.add('animate__animated', 'animate__fadeInUp');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Run once on page load
+            
+            // Form submission
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Obrigado por sua mensagem! Entraremos em contato em breve.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
